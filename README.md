@@ -1,9 +1,17 @@
-# Coding Key Sheet
+# Key Sheet
 
-* src\main\java
+* src\main\java  
 * src\main\resources
 * src\main\target
 * src\main\webapp
+  * META-INF
+  * WEB-INF
+
+## =============JAVA STANDARD EDITION=============
+
+## =============LOMBOK API=============
+
+## =============JAVA ENTERPRISE EDITION=============
 
 ## =============SPRING FRAMEWORK=============
 * Maven + 7 Spring jar files (spring-context-support, spring-context, spring-core, spring-beans, spring-aop, spring-jcl,
@@ -48,9 +56,54 @@ spring-expression)
 * Three thumb rules while working with Spring Boot.
 * Other stereotypes: @RestController, @ControllerAdvice
 
+## =============SPRING DATA JPA=============
+
+## =============SPRING TRANSACTION MANAGEMENT=============
+
 ## =============SPRING WEB / SPRING BOOT MVC=============
 
+## =============REST API / RESTFUL WEBSERVICES=============
+
+## =============SPRING CLOUD / MICROSERVICES=============
+
+## =============SPRING SECURITY=============
+
+## =============JMS JAVA MESSAGE SERVICE=============
+
+## =============APACHE KAFKA=============
+
+## =============SPRING MONGODB=============
+
+## =============SPRING MAIL=============
+
+## =============SPRING SCHEDULING=============
+
+## =============SPRING BATCH=============
+
+## =============SPRING AOP=============
+
+## =============DESIGN PATTERNS=============
+
+## =============SWAGGER API=============
+
+## =============UNIT TESTING=============
+
+## =============LOGGING=============
+
+## =============DOCKER=============
+
+## =============KUBERNETES=============
+
+## =============JENKINS=============
+
+## =============TERRAFORM=============
+
+## =============ANSIBLE=============
+
+
+
 ### =============ZEPHYR=============
+
 > A singleton class is made spring bean and configured multiple times with different bean id, what happens?
 * Singleton pattern is broken and different object is created for each bean id.
 
