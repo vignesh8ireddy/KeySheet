@@ -6,6 +6,8 @@
 * src\main\webapp
   * META-INF
   * WEB-INF
+* src\test\java
+* src\test\resources
 
 ## =============JAVA STANDARD EDITION=============
 
