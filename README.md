@@ -10,10 +10,37 @@
 * src\test\resources
 
 ## =============JAVA STANDARD EDITION=============
+* Java Bean (5 Standards, 3 Classic examples: VO, DTO, BO)
+
+* Concrete class, Abstract class, Interface | Concrete method, Abstract method, Null method
+* java.time API introduced in java 8 addresses the shortcomings of the older java.util.Date and java.util.Calendar 
+classes.
+* 
 
 ## =============LOMBOK API=============
+* @Setter, @Getter, @AllArgsConstructor, @NoArgsConstructor, @RequiredArgsConstructor and @NonNull, @ToString, @EqualsAndHashCode
+* @Data (@Setter, @Getter, @RequiredArgsConstructor, @ToString, @EqualsAndHashCode)
+* @Retention(SOURCE) of every lombok annotation
+* Object.toString() X @ToString of lombok
+* Object.equals(), Object.hashCode() X @EqualsAndHashCode of lombok
+* @Data will generate RequiredArgsConstructor only when @AllArgsConstructor and/or @NoArgsConstructor are not placed.
+If @AllArgsConstructor and/or @NoArgsConstructor are/is placed, then use @RequiredArgsConstructor along with @Data.
 
 ## =============JAVA ENTERPRISE EDITION=============
+* Programming Language X Language Technology X Framework
+* Application Server X Web Server X Database Server
+* Catalina Container, 5 operations on a servlet component
+  * Load component class, Create instance, Manage instance, Call life cycle methods, Destroy instance.
+* Web Server Responsibilities
+  * Builtin JRE
+  * Provides Web Container (has both Catalina container and Jasper container)
+  * Security, Logging, Auditing,..
+  * Requests and Responses
+* Daemon Process (best example: Windows Task Manager)
+* Upto version 6 Tomcat is a Webserver and from version 7, Tomcat is an application server.
+* Servlets using Servlet API and JSP API
+
+* 3 ways of Configuring servlet component with catalina container.
 
 ## =============SPRING FRAMEWORK=============
 * Maven + 7 Spring jar files (spring-context-support, spring-context, spring-core, spring-beans, spring-aop, spring-jcl,
@@ -60,13 +87,52 @@ spring-expression)
 
 ## =============SPRING DATA JPA=============
 
-## =============SPRING TRANSACTION MANAGEMENT=============
+## ======SPRING TRANSACTION MANAGEMENT======
 
 ## =============SPRING WEB / SPRING BOOT MVC=============
+* MVC X Monolithic
+* MVC Application Components: FrontController, Controller classes, HandlerMapping, View components and View Resolver
+* DispatcherServlet: FrontController servlet given by spring-web starter.
+* Spring MVC X Spring Boot MVC
+* Background operations when a spring boot mvc application is deployed over an application server.
+* Maven Dependencies: spring-web, spring dev-tools API, Apache JSTL-API
+* application.properties:
+  * spring.mvc.view.prefix
+  * spring.mvc.view.suffix
+  * server.port
+  * server.servlet.context-path
+* webapps/WEB-INF/
+  * classes
+  * lib
+  * config
+  * pages
+* @RequestMapping(String), @GetMapping(String), @PostMapping(String),...
+* Request Paths: start with "/", default one, multiple request paths,
+* Spring Boot MVC Application Working
+* Embedded Tomcat Server provided by Spring Boot, tomcat-embed-jasper maven dependency.
+* Data Rendering and Shared Memory
+  * Map (I)
+  * Model (I)
+  * BindingAwareModelMap (C)
+  * HashMap (C)
+* Cases where request path of a handler method becoming logical view name for the request
+* ModelAndView(C), legacy style of data rendering and returning logical view name.
+* Handler method chaining: forward X redirect
+* Using PrintWriter(C) instead of View components
+* Rendering Collections, Arrays, Model(C) instance, array of Model(c) instances,...
+* One-Way Data Binding:
+  * HTML form elements' name attribute
+  * Candidate(C)
+  * 
+* Two-Way Data Binding:
 
 ## =============REST API / RESTFUL WEBSERVICES=============
 
+## =============SWAGGER API=============
+
 ## =============SPRING CLOUD / MICROSERVICES=============
+
+## =============DESIGN PATTERNS=============
 
 ## =============SPRING SECURITY=============
 
@@ -84,9 +150,7 @@ spring-expression)
 
 ## =============SPRING AOP=============
 
-## =============DESIGN PATTERNS=============
-
-## =============SWAGGER API=============
+## =============GRAPHQL=============
 
 ## =============UNIT TESTING=============
 
@@ -104,7 +168,7 @@ spring-expression)
 
 
 
-### =============ZEPHYR=============
+## =============ZEPHYR=============
 
 > A singleton class is made spring bean and configured multiple times with different bean id, what happens?
 * Singleton pattern is broken and different object is created for each bean id.
@@ -113,3 +177,15 @@ spring-expression)
 multiple times over the class.
 * Singleton pattern is broken, prototype scope is continued i.e multiple objects would be created for singleton class.
 
+> Is Constructor overloading and overriding possible?
+* Constructor overloading is possible and very common, but constructor overriding is not possible because subclass'
+constructor name is not same as superclass'.
+
+> What happens when there is an infinite loop in the constructor chaining, CTE or RTE?
+* CTE: Compile-Time Error
+
+> Is it possible to generate a constructor with var-args using lombok api?
+* No
+
+> What kind of request does a hyperlink generates?
+* GET request
