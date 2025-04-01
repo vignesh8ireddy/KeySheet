@@ -1,15 +1,9 @@
 # Key Sheet
 
-* src\main\java  
-* src\main\resources
-* src\main\target
-* src\main\webapp
-  * META-INF
-  * WEB-INF
-* src\test\java
-* src\test\resources
 
-## =============JAVA STANDARD EDITION=============
+## =============| JAVA STANDARD EDITION |=============
+
+* 
 * Java Bean (5 Standards, 3 Classic examples: VO, DTO, BO)
 
 * Concrete class, Abstract class, Interface | Concrete method, Abstract method, Null method
@@ -17,7 +11,7 @@
 classes.
 * 
 
-## =============LOMBOK API=============
+## =============| LOMBOK API |=============
 * @Setter, @Getter, @AllArgsConstructor, @NoArgsConstructor, @RequiredArgsConstructor and @NonNull, @ToString, @EqualsAndHashCode
 * @Data (@Setter, @Getter, @RequiredArgsConstructor, @ToString, @EqualsAndHashCode)
 * @Retention(SOURCE) of every lombok annotation
@@ -26,7 +20,7 @@ classes.
 * @Data will generate RequiredArgsConstructor only when @AllArgsConstructor and/or @NoArgsConstructor are not placed.
 If @AllArgsConstructor and/or @NoArgsConstructor are/is placed, then use @RequiredArgsConstructor along with @Data.
 
-## =============JAVA ENTERPRISE EDITION=============
+## =============| JAVA ENTERPRISE EDITION |=============
 * Programming Language X Language Technology X Framework
 * Application Server X Web Server X Database Server
 * Catalina Container, 5 operations on a servlet component
@@ -41,8 +35,19 @@ If @AllArgsConstructor and/or @NoArgsConstructor are/is placed, then use @Requir
 * Servlets using Servlet API and JSP API
 
 * 3 ways of Configuring servlet component with catalina container.
-
-## =============SPRING FRAMEWORK=============
+* Project Directory Structures
+  * Project in src folder
+    * src\project
+  * Project in src\main\java folder
+    * src\main\java\
+    * src\main\resources
+    * src\main\target
+    * src\main\webapp
+      * META-INF
+      * WEB-INF
+    * src\test\java
+    * src\test\resources
+## =============| SPRING FRAMEWORK |=============
 * Maven + 7 Spring jar files (spring-context-support, spring-context, spring-core, spring-beans, spring-aop, spring-jcl,
 spring-expression)
 * Java Bean/Component
@@ -71,7 +76,7 @@ spring-expression)
 * A spring bean life cycle: Bean Loading, Instantiation, Dependency Injection, @PostConstruct, Business methods, 
 @PreDestroy, DeInstantiation, Bean Unloading
 
-## =============SPRING BOOT=============
+## =============| SPRING BOOT |=============
 * Spring boot starter jar files makes Spring Boot powerful than Spring Framework
 * Spring Boot X Spring Framework
   * Autoconfiguration of certain spring beans
@@ -85,11 +90,13 @@ spring-expression)
 * Three thumb rules while working with Spring Boot.
 * Other stereotypes: @RestController, @ControllerAdvice
 
-## =============SPRING DATA JPA=============
+## =============| SPRING DATA JPA |=============
 
-## ======SPRING TRANSACTION MANAGEMENT======
+## =============| SPRING MONGODB |=============
 
-## =============SPRING WEB / SPRING BOOT MVC=============
+## ======| SPRING TRANSACTION MANAGEMENT |======
+
+## =============| SPRING WEB / SPRING BOOT MVC |=============
 * MVC X Monolithic
 * MVC Application Components: FrontController, Controller classes, HandlerMapping, View components and View Resolver
 * DispatcherServlet: FrontController servlet given by spring-web starter.
@@ -126,49 +133,68 @@ spring-expression)
   * 
 * Two-Way Data Binding:
 
-## =============REST API / RESTFUL WEBSERVICES=============
+## =============| REST API / RESTFUL WEBSERVICES |=============
 
-## =============SWAGGER API=============
+## =============| SWAGGER API |=============
 
-## =============SPRING CLOUD / MICROSERVICES=============
+## =============| SPRING CLOUD / MICROSERVICES |=============
 
-## =============DESIGN PATTERNS=============
-
-## =============SPRING SECURITY=============
-
-## =============JMS JAVA MESSAGE SERVICE=============
-
-## =============APACHE KAFKA=============
-
-## =============SPRING MONGODB=============
-
-## =============SPRING MAIL=============
-
-## =============SPRING SCHEDULING=============
-
-## =============SPRING BATCH=============
-
-## =============SPRING AOP=============
-
-## =============GRAPHQL=============
-
-## =============UNIT TESTING=============
-
-## =============LOGGING=============
-
-## =============DOCKER=============
-
-## =============KUBERNETES=============
-
-## =============JENKINS=============
-
-## =============TERRAFORM=============
-
-## =============ANSIBLE=============
+## =============| DESIGN PATTERNS |=============
+* 23 GoF Patterns
+  * Creational Patterns
+    * Singleton, Factory, Abstract Factory, Builder, Prototype
+  * Structural Patterns
+    * Adapter, Decorator, Flyweight, Proxy, Facade, Composite, Bridge,...
+  * Behavioral Patterns
+    * Chain of Responsibility, Template, Strategy, Command, Interpreter, Iterator, Mediator, Momento, Observer, State,
+    Visitor,...
+* JEE Patterns [client Tier, Presentation Tier, Business Tier, Integration Tier, Resource Tier]
+  * Presentation Tier
+    * Front Controller, Intercepting Filter, Application Controller, Context Object, View Helper, Composite View,
+    Service to Worker and Dispatcher View
+  * Business Tier
+    * Business Delegate, Service Locator, Service Facade, Application Service, Business Object, Composite Entity,
+    Transfer Object, Transfer Object Assembler, Value List Handler,...
+  * Integration Tier Patterns
+* Microservices Patterns
 
 
+## =============| SPRING SECURITY |=============
 
-## =============ZEPHYR=============
+## =============| SPRING MAIL |=============
+
+## =============| SPRING SCHEDULING |=============
+
+## =============| SPRING BATCH |=============
+
+## =============| SPRING JDBC |=============
+
+## =============| JMS JAVA MESSAGE SERVICE |=============
+
+## =============| APACHE KAFKA |=============
+
+## =============| SPRING AOP |=============
+
+## =============| GRAPHQL |=============
+
+## =============| UNIT TESTING |=============
+
+## =============| LOGGING |=============
+
+## =============| DOCKER |=============
+
+## =============| KUBERNETES |=============
+
+## =============| JENKINS |=============
+
+## =============| TERRAFORM |=============
+
+## =============| ANSIBLE |=============
+
+## =============| SPRING AI |=============
+
+
+## =============| ZEPHYR |=============
 
 > A singleton class is made spring bean and configured multiple times with different bean id, what happens?
 * Singleton pattern is broken and different object is created for each bean id.
