@@ -96,7 +96,7 @@ spring-expression)
 
 ## ======| SPRING TRANSACTION MANAGEMENT |======
 
-## =============| SPRING WEB / SPRING BOOT MVC |=============
+## =============| SPRING BOOT MVC |=============
 * MVC X Monolithic
 * MVC Application Components: FrontController, Controller classes, HandlerMapping, View components and View Resolver
 * DispatcherServlet: FrontController servlet given by spring-web starter.
@@ -133,11 +133,11 @@ spring-expression)
   * 
 * Two-Way Data Binding:
 
-## =============| REST API / RESTFUL WEBSERVICES |=============
+## =============| REST API |=============
 
 ## =============| SWAGGER API |=============
 
-## =============| SPRING CLOUD / MICROSERVICES |=============
+## =============| MICROSERVICES |=============
 
 ## =============| DESIGN PATTERNS |=============
 * 23 GoF Patterns
@@ -192,6 +192,8 @@ spring-expression)
 ## =============| ANSIBLE |=============
 
 ## =============| SPRING AI |=============
+
+
 
 
 ## =============| ZEPHYR |=============
