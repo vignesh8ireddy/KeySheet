@@ -3,6 +3,27 @@
 
 ## =============| JAVA STANDARD EDITION |=============
 
+* Java Features
+* Java Software types
+* Java Program Elements
+* Java Data Types
+* String Handling
+* Wrapper Classes
+* Control Statements
+* Object Oriented Programming
+* JVM Architecture
+* Garbage Collection
+* Exception Handling
+* Java Packages
+* Multithreading
+* java.lang.Object class
+* IO Streams
+* Collection Framework
+* Inner classes
+* Reflection API
+* Date, Time and Text format
+* Annotations
+* Java 8 Features
 * 
 * Java Bean (5 Standards, 3 Classic examples: VO, DTO, BO)
 
