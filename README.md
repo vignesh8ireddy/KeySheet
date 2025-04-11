@@ -1,7 +1,7 @@
 # Key Sheet
 
 
-## =============| JAVA STANDARD EDITION |=============
+## =====| JAVA STANDARD EDITION |=====
 
 * Java Features
 * Java Software types
@@ -32,7 +32,7 @@
 classes.
 * 
 
-## =============| LOMBOK API |=============
+## =====| LOMBOK API |=====
 * @Setter, @Getter, @AllArgsConstructor, @NoArgsConstructor, @RequiredArgsConstructor and @NonNull, @ToString, @EqualsAndHashCode
 * @Data (@Setter, @Getter, @RequiredArgsConstructor, @ToString, @EqualsAndHashCode)
 * @Retention(SOURCE) of every lombok annotation
@@ -41,7 +41,7 @@ classes.
 * @Data will generate RequiredArgsConstructor only when @AllArgsConstructor and/or @NoArgsConstructor are not placed.
 If @AllArgsConstructor and/or @NoArgsConstructor are/is placed, then use @RequiredArgsConstructor along with @Data.
 
-## =============| JAVA ENTERPRISE EDITION |=============
+## =====| JAVA ENTERPRISE EDITION |=====
 * Programming Language X Language Technology X Framework
 * Application Server X Web Server X Database Server
 * Catalina Container, 5 operations on a servlet component
@@ -68,7 +68,42 @@ If @AllArgsConstructor and/or @NoArgsConstructor are/is placed, then use @Requir
       * WEB-INF
     * src\test\java
     * src\test\resources
-## =============| SPRING FRAMEWORK |=============
+
+## =====| ALGORITHMS |=====
+* Analysis of an Algorithm
+* Recursion Paradigm
+  * Sum of first N natural numbers
+  * Factorial of integer N.
+  * Fibonacci sequence
+  * HCF, LCM of two integers A and B.
+  * Sum of a collection of numbers.
+  * Tower of Hanoi
+* Divide, Conquer and Combine
+* Greedy Approach
+* Dynamic Programming
+* Hashing
+
+## =====| DATA STRUCTURES |=====
+* Array
+* String
+* Linked List
+  * Singly Linked List
+  * Circular SLL
+  * Doubly Linked List
+  * Circular DLL
+* Stack
+* Queue
+* Tree
+  * Binary Tree
+    * Min Heap / Max Heap
+    * Full Binary Tree
+    * Complete Binary Tree
+    * Almost Complete Binary Tree
+    * Degenerate Binary Tree
+    * Binary Search Tree
+* Graph
+
+## =====| SPRING FRAMEWORK |=====
 * Maven + 7 Spring jar files (spring-context-support, spring-context, spring-core, spring-beans, spring-aop, spring-jcl,
 spring-expression)
 * Java Bean/Component
@@ -97,7 +132,7 @@ spring-expression)
 * A spring bean life cycle: Bean Loading, Instantiation, Dependency Injection, @PostConstruct, Business methods, 
 @PreDestroy, DeInstantiation, Bean Unloading
 
-## =============| SPRING BOOT |=============
+## =====| SPRING BOOT |=====
 * Spring boot starter jar files makes Spring Boot powerful than Spring Framework
 * Spring Boot X Spring Framework
   * Autoconfiguration of certain spring beans
@@ -111,13 +146,13 @@ spring-expression)
 * Three thumb rules while working with Spring Boot.
 * Other stereotypes: @RestController, @ControllerAdvice
 
-## =============| SPRING DATA JPA |=============
+## =====| SPRING DATA JPA |=====
 
-## =============| SPRING MONGODB |=============
+## =====| SPRING MONGODB |=====
 
-## ======| SPRING TRANSACTION MANAGEMENT |======
+## =====| SPRING TRANSACTION MANAGEMENT |=====
 
-## =============| SPRING BOOT MVC |=============
+## =====| SPRING BOOT MVC |=====
 * MVC X Monolithic
 * MVC Application Components: FrontController, Controller classes, HandlerMapping, View components and View Resolver
 * DispatcherServlet: FrontController servlet given by spring-web starter.
@@ -134,7 +169,7 @@ spring-expression)
   * lib
   * config
   * pages
-* @RequestMapping(String), @GetMapping(String), @PostMapping(String),...
+* @RequestMapping(String), @GetMapping(String), @PostMapping(String).
 * Request Paths: start with "/", default one, multiple request paths,
 * Spring Boot MVC Application Working
 * Embedded Tomcat Server provided by Spring Boot, tomcat-embed-jasper maven dependency.
@@ -154,13 +189,28 @@ spring-expression)
   * 
 * Two-Way Data Binding:
 
-## =============| REST API |=============
+## =====| REST API |=====
+* Spring Boot MVC X Spring BOOT REST
+* Web Application X Distributed Application, 5 layers
+* Global data formats, XML X JSON
+* Webservices: SOAP X RESTful
+* Stub logics, Skeleton logics
+* HTTP Request, 9 modes, Accept response format in header & HTTP Response, 5 groups of Status Code.
+* @ResponseBody, @RestController
+* ResponseEntity<T>(Object, HttpStatus) and handy methods
+* POSTMAN Tool
+* Jackson API for Serializing and DeSerializing JSON content, Marshalling and UnMarshalling XML content.
+  * ObjectMapper.readValue(String,Class),ObjectMapper.writeValueAsString(Class),...
+* @RequestBody parameter, @RequestParam parameter and @PathVariable parameter of EndPoints.
+* RestTemplate
+  * xxxxForEntity(), xxxxForObject(), exchange()
+  * HttpHeaders, HttpEntity for POST requests
 
-## =============| SWAGGER API |=============
+## =====| SWAGGER API |=====
 
 ## =============| MICROSERVICES |=============
 
-## =============| DESIGN PATTERNS |=============
+## =====| DESIGN PATTERNS |=====
 * 23 GoF Patterns
   * Creational Patterns
     * Singleton, Factory, Abstract Factory, Builder, Prototype
@@ -179,45 +229,48 @@ spring-expression)
   * Integration Tier Patterns
 * Microservices Patterns
 
+## =====| SPRING SECURITY |=====
 
-## =============| SPRING SECURITY |=============
+## =====| SPRING MAIL |=====
 
-## =============| SPRING MAIL |=============
+## =====| SPRING SCHEDULING |=====
 
-## =============| SPRING SCHEDULING |=============
+## =====| SPRING BATCH |=====
 
-## =============| SPRING BATCH |=============
+## =====| SPRING AOP |=====
 
-## =============| SPRING JDBC |=============
+## =====| SPRING JDBC |=====
 
-## =============| JMS JAVA MESSAGE SERVICE |=============
+## =====| UNIT TESTING |=====
 
-## =============| APACHE KAFKA |=============
+## =====| LOGGING |=====
 
-## =============| SPRING AOP |=============
+## =====| Java Code Coverage |=====
 
-## =============| GRAPHQL |=============
+## =====| JMS JAVA MESSAGE SERVICE |=====
 
-## =============| UNIT TESTING |=============
+## =====| APACHE KAFKA |=====
 
-## =============| LOGGING |=============
+## =====| Spring Boot Reactive |=====
 
-## =============| DOCKER |=============
+## =====| GRAPHQL |=====
 
-## =============| KUBERNETES |=============
+## =====| DOCKER |=====
 
-## =============| JENKINS |=============
+## =====| KUBERNETES |=====
 
-## =============| TERRAFORM |=============
+## =====| JENKINS |=====
 
-## =============| ANSIBLE |=============
+## =====| ANSIBLE |=====
 
-## =============| SPRING AI |=============
+## =====| TERRAFORM |=====
+
+## =====| SPRING AI |=====
 
 
 
 
-## =============| ZEPHYR |=============
+## =====| ZEPHYR |=====
 
 > A singleton class is made spring bean and configured multiple times with different bean id, what happens?
 * Singleton pattern is broken and different object is created for each bean id.
