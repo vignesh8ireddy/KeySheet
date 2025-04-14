@@ -147,7 +147,26 @@ spring-expression)
 * Other stereotypes: @RestController, @ControllerAdvice
 
 ## =====| SPRING DATA JPA |=====
-
+* Spring Data Vs Spring JDBC, Spring ORM, MongoDB API,...
+* Spring JDBC X Spring Data JDBC
+* ORM Technology
+* Predefined Repository Interface Hierarchy and Methods
+* Spring Data JPA Application Setup
+* EntityManager of a spring boot application
+* Spring Data JPA Application Working and Flow
+* CrudRepository, PaginationAndSortingRepository, JpaRepository
+* Finder Methods
+* Query Methods
+* PL/SQL Procedures and Functions
+* Working with Data and Time
+* Working with BOBs and LOBs
+* Associations
+* Interacting with multiple DBs
+```
+@Entity, @Table, @Id, @Column, @Tansient, @GeneratedValue, @Query, @Param,
+@Transactional, @Modifying, @Version, @CreationTimestamp, @UpdateTimestamp,
+@Lob, @OneToOne, @OneToMany, @ManyToOne, @ManyToMany, @JoinColumn, @JoinTable
+```
 ## =====| SPRING MONGODB |=====
 
 ## =====| SPRING TRANSACTION MANAGEMENT |=====
@@ -208,7 +227,7 @@ spring-expression)
 
 ## =====| SWAGGER API |=====
 
-## =============| MICROSERVICES |=============
+## =====| MICROSERVICES |=====
 
 ## =====| DESIGN PATTERNS |=====
 * 23 GoF Patterns
